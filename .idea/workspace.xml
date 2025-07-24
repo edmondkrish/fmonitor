@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb27517f-5f5e-4e2c-a4d2-76bc4c317abe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/fmonitor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/camera.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photo_20250724_013720.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photo_20250724_013820.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/0921cd1f-79e7-4e94-a4b2-a0261ad86bc2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/0e22c711-335a-4abe-9742-34017f053ebf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/1573e5a2-0882-4354-8ca2-32c67dc73adb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/1cbed408-c4f1-4227-ab61-445f6f86eb4e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/3a676df6-e5a5-4ed1-95e0-4bc00d4e85c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/6e77c6f0-43d7-4d57-85ec-ce3cca510ba5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/a6a468ea-0b92-472a-9d2d-c66f77cb2414.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/b750ff73-8169-40ee-9538-710a2f785abf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/bac93e6e-ab61-4343-9bbf-957cc08789b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/cee91636-95af-4e8a-a26e-4f9d0884644d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/camera.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/generated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urls.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="30JJQ9ebipC60MFQOvcsazx2z2e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="fmonitor" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4c141bd692a7-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb27517f-5f5e-4e2c-a4d2-76bc4c317abe" name="Changes" comment="" />
+      <created>1753339724793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753339724793</updated>
+    </task>
+    <servers />
+  </component>
+</project>
